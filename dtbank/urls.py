@@ -19,6 +19,6 @@ from . import views
 
 urlpatterns = [
     path('login', views.serveLogin, name='login'),
-    path('user', views.serveUser, name='login'),
-    path('dbmanager', views.serveDbManager, name='login'),
+    path('user', views.serveUser, name='user'),
+    path('dbmanager', views.serveDbManager, name='dbmanager'),
 ]
