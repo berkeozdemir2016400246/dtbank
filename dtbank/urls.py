@@ -21,4 +21,9 @@ urlpatterns = [
     path('login', views.serveLogin, name='login'),
     path('user', views.serveUser, name='user'),
     path('dbmanager', views.serveDbManager, name='dbmanager'),
+    path('dbmanager/createuser', views.serveCreateUser, name='createuser'),
+    path('dbmanager/deletedrug', views.serveDeleteDrug, name='deletedrug'),
+    path('dbmanager/deleteProtein', views.serveDeleteProtein, name='deleteprotein'),
+    path('dbmanager/updateDrug', views.serveUpdateDrug, name='updatedrug'),
+    path('dbmanager/updateReaction', views.serveUpdateReaction, name='updatereaction'),
 ]

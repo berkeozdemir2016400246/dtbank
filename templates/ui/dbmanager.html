@@ -5,6 +5,30 @@
     <title>Title</title>
 </head>
 <body>
-manager
+<form class="form-group" method="POST" novalidate action="{% url 'createuser' %}">
+    {% csrf_token %}
+    <button type="submit" style="margin-top: 10px;"class="btn btn-success">Create User</button>
+</form>
+<br>
+<form class="form-group" method="POST" novalidate action="{% url 'deletedrug' %}">
+    {% csrf_token %}
+    <button type="submit" style="margin-top: 10px;"class="btn btn-success">Delete Drug</button>
+</form>
+<br>
+<form class="form-group" method="POST" novalidate action="{% url 'deleteprotein' %}">
+    {% csrf_token %}
+    <button type="submit" style="margin-top: 10px;"class="btn btn-success">Delete Protein</button>
+</form>
+<br>
+<form class="form-group" method="POST" novalidate action="{% url 'createuser' %}">
+    {% csrf_token %}
+    <button type="submit" style="margin-top: 10px;"class="btn btn-success">Update Drug</button>
+</form>
+<br>
+<form class="form-group" method="POST" novalidate action="{% url 'updatereaction' %}">
+    {% csrf_token %}
+    <button type="submit" style="margin-top: 10px;"class="btn btn-success">Update Reaction</button>
+</form>
+<br>
 </body>
 </html>

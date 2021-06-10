@@ -127,3 +127,17 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3',
+    # }
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'dtbank',
+        'USER': 'admin',
+        'PASSWORD': '!Adminadmin123',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+    }
+}
